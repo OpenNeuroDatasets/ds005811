@@ -6,7 +6,7 @@ To address this limitation, we extended our previously collected Natural Object 
 
 We anticipate that the NOD dataset will serve as a valuable resource for advancing our understanding of the cognitive and neural mechanisms underlying object recognition. 
 
-The MEG data's accession number is ds005810.
+The MEG data's accession number is `ds005810`.
 
 ---
 
@@ -14,13 +14,13 @@ The MEG data's accession number is ds005810.
 
 ## Directory Structure
 
-The raw data from each subject are stored in the "sub-subID" directory, while preprocessed data and epoch data are stored in the following directories:
+The raw data from each subject are stored in the `sub-subID` directory, while preprocessed data and epoch data are stored in the following directories:
 - **Preprocessed Data:** `derivatives/preprocessed/raw`
 - **Epoch Data:** `derivatives/preprocessed/epochs`
 
 ### Stimulus Images
 
-The stimulus images used for MEG and EEG are identical and are stored in the `stimuli/ImageNet` directory. Images within this folder are named in the format:`synsetID_imageID.JPEG` Where:
+The stimulus images used for MEG and EEG are identical and are stored in the `stimuli/ImageNet` directory. Images within this folder are named in the `synsetID_imageID.JPEG` Where:
 - `synsetID` is the ILSVRC category information.
 - `imageID` is the unique number for the image within that category.
 
