@@ -14,7 +14,7 @@ The MEG data's accession number is ds005810.
 
 ## Directory Structure
 
-The raw data from each subject are stored in the "sub-ID" directory, while preprocessed data and epoch data are stored in the following directories:
+The raw data from each subject are stored in the "sub-subID" directory, while preprocessed data and epoch data are stored in the following directories:
 - **Preprocessed Data:** `derivatives/preprocessed/raw`
 - **Epoch Data:** `derivatives/preprocessed/epochs`
 
