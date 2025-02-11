@@ -1,4 +1,4 @@
-﻿# Summary
+# Summary
 
 The human brain can rapidly recognize meaningful objects from natural scenes encountered in everyday life. Neuroimaging with large-scale naturalistic stimuli is increasingly employed to elucidate these neural mechanisms of object recognition across these rich and daily natural scenes. However, most existing large-scale neuroimaging datasets with naturalistic stimuli primarily rely on functional magnetic resonance imaging (fMRI), which provides high spatial resolution to characterize spatial representation patterns but is limited in capturing the temporal dynamics inherent in visual cognitive processing.
 
@@ -14,7 +14,7 @@ The MEG data's accession number is ds005810.
 
 ## Directory Structure
 
-The raw data from each subject are stored in the `sub-<ID>` directory, while preprocessed data and epoch data are stored in the following directories:
+The raw data from each subject are stored in the "sub-<ID>" directory, while preprocessed data and epoch data are stored in the following directories:
 - **Preprocessed Data:** `derivatives/preprocessed/raw`
 - **Epoch Data:** `derivatives/preprocessed/epochs`
 
