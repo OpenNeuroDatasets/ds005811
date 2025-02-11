@@ -14,13 +14,13 @@ The MEG data's accession number is ds005810.
 
 ## Directory Structure
 
-The raw data from each subject are stored in the "sub-<ID>" directory, while preprocessed data and epoch data are stored in the following directories:
+The raw data from each subject are stored in the "sub-ID" directory, while preprocessed data and epoch data are stored in the following directories:
 - **Preprocessed Data:** `derivatives/preprocessed/raw`
 - **Epoch Data:** `derivatives/preprocessed/epochs`
 
 ### Stimulus Images
 
-The stimulus images used for MEG and EEG are identical and are stored in the `stimuli/ImageNet` directory. Images within this folder are named in the format:`<synsetID>_<imageID>.JPEG` Where:
+The stimulus images used for MEG and EEG are identical and are stored in the `stimuli/ImageNet` directory. Images within this folder are named in the format:`synsetID_imageID.JPEG` Where:
 - `synsetID` is the ILSVRC category information.
 - `imageID` is the unique number for the image within that category.
 
@@ -28,13 +28,13 @@ The image metadata, including category information, is available in the table fi
 
 ### Raw Data
 
-Raw EEG data are stored in BIDS format. Each subject's directory contains multiple session folders, designated as `ses-<sesID>`. Comprehensive trial information for each subject is documented in the file: `derivatives/detailed_events/sub-<subID>_events.csv` Where each row corresponds to a trial, and each column contains metadata for that trial, including the session and run number, category information of the stimuli, and subject response.
+Raw EEG data are stored in BIDS format. Each subject's directory contains multiple session folders, designated as `ses-sesID`. Comprehensive trial information for each subject is documented in the file: `derivatives/detailed_events/sub-subID_events.csv` Where each row corresponds to a trial, and each column contains metadata for that trial, including the session and run number, category information of the stimuli, and subject response.
 
 ### Preprocessed Data
 
-The full time series data of preprocessed data are archived in the `derivatives/raw` directory, named as: `sub-<subID>_ses-<sesID>task-ImageNet_run-<runID>_eeg_clean.fif` The epoch data derived from preprocessed data are stored within the `derivatives/epochs` directory. In this directory, all data for each subject are concatenated into a single file, labeled as: `sub-<subID>_epo.fif`
+The full time series data of preprocessed data are archived in the `derivatives/raw` directory, named as: `sub-subID_ses-sesID_task-ImageNet_run-runID_eeg_clean.fif`. The epoch data derived from preprocessed data are stored within the `derivatives/epochs` directory. In this directory, all data for each subject are concatenated into a single file, labeled as: `sub-subID_epo.fif`
 
-The trial information within each subject's epochs data can be accessed via the metadata of the epochs data, which are aligned with the content of the subject's `sub-<subID>_events.csv` file.
+The trial information within each subject's epochs data can be accessed via the metadata of the epochs data, which are aligned with the content of the subject's `sub-subID_events.csv` file.
 
 ---
 
